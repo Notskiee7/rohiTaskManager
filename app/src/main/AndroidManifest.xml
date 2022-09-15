@@ -17,6 +17,9 @@
             android:name=".signIn"
             android:exported="false" />
         <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
             android:name=".splashScreen"
             android:exported="true">
             <intent-filter>
@@ -25,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

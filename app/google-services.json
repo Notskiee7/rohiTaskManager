@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "697049133006",
+    "project_id": "rohitaskmanager",
+    "storage_bucket": "rohitaskmanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697049133006:android:e989d9ebd8a7bc0a3c459f",
+        "android_client_info": {
+          "package_name": "rao.rohi.rohitaskmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697049133006-ohhlttr8gr679jm3r7fpjpkffbruh2sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxVuuMvMIsuPpIvGjswhOhZ-xQ5taTOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697049133006-ohhlttr8gr679jm3r7fpjpkffbruh2sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
