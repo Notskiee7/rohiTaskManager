@@ -55,9 +55,6 @@ public class signIn extends AppCompatActivity {
             }
         });
 
-
-
-
     }
 
     private void checkAndSave()
