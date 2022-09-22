@@ -15,12 +15,12 @@
     <ListView
         android:id="@+id/List"
         android:layout_width="match_parent"
-        android:layout_height="629dp" />
+        android:layout_height="462dp" />
 
     <ImageButton
         android:id="@+id/imageButtonAdd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </LinearLayout>

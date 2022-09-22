@@ -50,7 +50,7 @@ public class SignUp extends AppCompatActivity {
 
 
     }
-
+    //checkAndSave is a function that check if all the conditions of the email and
     private void CheckAndSave() {
         String signUpMail=etMail2.getText().toString();
         String signUpPass=etPassword2.getText().toString();
@@ -81,18 +81,25 @@ public class SignUp extends AppCompatActivity {
 
 
         if(isOk){
+            //used for signing in, signing up and sign out
             FirebaseAuth auth = FirebaseAuth.getInstance();
             //create a new user with email and password
             auth.createUserWithEmailAndPassword(signUpMail,signUpPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
+                /**
+                 * event handler when the mission is completed (create account)
+                 * the task is an information about the event
+                 */
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful()){
+
+                    if(task.isSuccessful()){    //check if the mission (built account) is successful
                         /*
                         if the email and password are valid then the email and the pass are saved in the firebase
                         and a text will pop up in the bottom of the screen says "password and email are saved"
                          */
                         Toast.makeText(SignUp.this, "password and email are saved", Toast.LENGTH_SHORT).show();
-                        finish();
+                        finish(); // when  i press the button save the current screen will close and returns to the previous screen
+
                     }
                     else{
                         Toast.makeText(SignUp.this, "something wrong in password or Email"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -106,38 +113,3 @@ public class SignUp extends AppCompatActivity {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
