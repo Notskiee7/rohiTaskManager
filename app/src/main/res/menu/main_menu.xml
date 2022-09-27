@@ -4,7 +4,9 @@
 
     <item
         android:id="@+id/ItmSettings"
-        android:title="Settings" />
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Settings"
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/ItmHistory"
         android:icon="@android:drawable/ic_menu_recent_history"
